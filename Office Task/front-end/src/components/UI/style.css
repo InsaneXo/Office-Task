@@ -1,0 +1,172 @@
+/* Navbar CSS */
+.header {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.search-bar {
+  height: 50px;
+  width: 60%;
+  display: flex;
+  position: relative;
+  gap: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: #f5efe7;
+  padding: 0 15px;
+  border-radius: 29px;
+}
+
+/* Slider */
+
+.slider {
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  margin-top: 10px;
+  background-color: #f5efe7;
+  position: relative;
+}
+
+.images img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.left {
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* Boxes CSS*/
+
+.box-container {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.single-box {
+  width: 290px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5efe7;
+  border-radius: 10px;
+}
+
+.image-box {
+  height: 300px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-btn {
+  outline: none;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color: #f72c5b;
+  color: white;
+  cursor: pointer;
+}
+
+/* menu bar  */
+
+.menu-bar {
+  position: fixed;
+  background-color: #1a1a1d;
+  width: 350px;
+  height: 100%;
+  z-index: 112;
+  top: 0;
+  left: -100%;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-bar.active {
+  left: 0;
+}
+
+.menubar-header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #f72c5b;
+  margin-bottom: 10px;
+}
+
+.menu-items {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.menu-items:hover {
+  background-color: #f72c5b;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Recent bid */
+
+.bid-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.bid-user-image {
+  height: 50px;
+  width: 50px;
+  background-color: #1a1a1d;
+  border-radius: 50%;
+  overflow: hidden;
+}
